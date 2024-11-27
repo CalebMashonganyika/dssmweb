@@ -1,0 +1,125 @@
+:root {
+    --main-color: #52658C; /* Primary color */
+    --accent-color-1: orange; /* Secondary color */
+    --accent-color-2: yellow; /* Highlight color */
+    --text-color: #333; /* Neutral text color */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%; /* Ensure body and html take full height */
+    display: flex;
+    flex-direction: column; /* Use flexbox to stack elements */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white; /* Main background color */
+    color: var(--text-color);
+}
+
+main {
+    flex: 1; /* This makes the main content expand to fill available space */
+}
+
+h1, h2, h3 {
+    color: var(--main-color); /* Main headings in #52658C */
+}
+
+.navbar {
+    background-color: var(--main-color); /* Navbar in #52658C */
+    border-bottom: 3px solid var(--accent-color-1); /* Orange accent */
+}
+
+.nav-link {
+    color: white !important; /* Links in white for contrast */
+}
+
+.nav-link:hover {
+    color: var(--accent-color-1) !important; /* Hover effect in orange */
+}
+
+footer {
+    background-color: var(--main-color); /* Footer in #52658C */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-top: 3px solid var(--accent-color-1); /* Orange accent on top */
+}
+
+footer .btn {
+    margin: 5px;
+    background-color: var(--accent-color-1); /* Buttons in orange */
+    color: white;
+    border: none;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    display: inline-block;
+}
+
+footer .btn:hover {
+    background-color: var(--accent-color-2); /* Hover effect in yellow */
+    color: black; /* Contrast text color */
+}
+
+/* Utility classes */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: var(--main-color); /* #52658C */
+    font-weight: bold;
+}
+
+p a {
+    color: var(--accent-color-1); /* orange */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p a:hover {
+    color: var(--accent-color-2); /* yellow */
+    text-decoration: underline;
+}
+
+/* Styles for the business hacks section */
+.business-hack-container {
+    border: 1px solid #ddd; /* Faint border */
+    background-color: #f9f9f9; /* Light gray background */
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px; /* Padding inside the box */
+    margin-bottom: 20px; /* Space between hacks */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.business-hack-title {
+    font-size: 1.5rem; /* Larger text for the hack */
+    font-weight: bold;
+    color: #52658C; /* Primary color */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+.business-hack-meta {
+    font-size: 0.9rem; /* Smaller text for meta info */
+    color: #555; /* Neutral gray for metadata */
+}
+
+.business-hack-meta a {
+    color: #52658C; /* Link in primary color */
+    text-decoration: none;
+}
+
+.business-hack-meta a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
